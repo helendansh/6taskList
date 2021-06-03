@@ -4,6 +4,10 @@ import java.util.*;
 import java.time.Instant;
 import java.time.Duration;
 
+/**
+ * Зачтено 03.06.2021
+ */
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,13 +17,13 @@ public class Main {
     System.out.println("Прошло времени в LinkedList, мс: " + countTime(addlist(linklist)));
     }
     public static List<Integer> addlist (List<Integer> list) {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100000; i++) {
             list.add(i);
         }
         return list;
     }
     public static void getlist (List<Integer> list) {
-       for (int i=0; i < 1000; i++) {
+       for (int i=0; i < 100000; i++) {
             list.get(i);
         }
     }
